@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkslategrey;
+}
+
+.player{
+    position: absolute;
+    width: 320px;
+    background: linear-gradient(to right, #00d2ff, #3a7bd5);
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 18px 18px 44px 44px;
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+.icons{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+
+.image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 30px auto;
+    display: flex;
+}
+.image img:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 30px auto;
+    display: flex;
+    box-shadow: 1px 1px 4px 2px yellow,
+                -1px -1px 4px 2px red;
+}
+
+.title{
+text-align: center;
+margin-top: -1rem;
+line-height: 26px;
+}
+.title h1{
+    color: white;
+}
+.title p{
+    font-weight: 700;
+}
+.time{
+    text-align: center;
+}
+.seek {
+    width: 100%;
+    height: 5px;
+    background: greenyellow;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+  }
+
+.seek .fill {
+    width: 0px;
+    height: 5px;
+    background: red;
+    border-radius: 50px;
+  }
+  .btns {
+      position: relative;
+    margin: 40px auto;
+    height: 162px;
+    width: 100%;
+    border-radius: 44px;
+    text-align: center;
+background: linear-gradient(to right, #06f361, #3de045); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btns .play-btn 
+{
+    position: absolute;
+    left: 21.5%;
+    top: 2rem;
+    word-spacing: 50px;
+    
+}
+.play-btn .play-pause {
+    background: linear-gradient(to right, #06f361, #3de045);
+    padding: 15px 15px 15px 18px;
+    border-radius: 50%;
+  }
+
+  .play-btn .play-pause:hover{
+    box-shadow: 1px 1px 5px 0.5px #111;
+    color: white;
+    cursor: pointer;
+  }
+
+ .play-btn .back:hover{
+        font-size: 18px;
+        color: wheat;
+        transform: scale(2%);
+  }
+  .play-btn .for:hover{
+    font-size: 18px;
+    color: wheat;
+}
+
+.repeat-btn{
+    position: absolute;
+    top: 6rem;
+    left: 8.5%;
+    word-spacing: 25px;
+    color: white;
+}
+.decrease{
+    border-radius: 50%;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: red;
+    cursor: pointer;
+}
+.decrease:hover{
+    box-shadow: 1px 1px 5px 0.5px red,
+    -1px -1px 5px 0.5px red;
+}
+.increase{
+    border-radius: 50%;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: red;
+    cursor: pointer;
+}
+.increase:hover{
+    box-shadow: 1px 1px 5px 0.5px red,
+    -1px -1px 5px 0.5px red;
+}
+
+.volume-up{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow:1px 1px 5px 0.5px #111;
+    cursor: pointer;
+}
+.hearts{
+    font-size: 24px;
+    color: red;
+    margin-top: 0.5rem;
+    padding-left: 5px;
+}
+.bar{
+    font-size: 18px;
+    margin-top: 0.5rem;
+    padding-right: 15px;
+}
